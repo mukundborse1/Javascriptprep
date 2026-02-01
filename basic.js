@@ -1,11 +1,27 @@
-let city = 'Pune'
-console.log(`I am from ${city}`);
-let out = ''
-for (let i=city.length -1; i>=0; i--){
-    out += city[i]   
-}
-console.log(out);
+// let a = 5;
+// let b= '5';
 
-let citys = ['Pune', 'Mumbai', 'Nashik', 'Pune'];
-let output = citys.filter((value,index) => citys.indexOf(value) === index)
-console.log(output);
+// console.log(a == b);
+// console.log(a === b);
+// console.log(a+b);
+// console.log(a-b);
+// console.log(a*b);
+// console.log(a%b);
+
+function outer() {
+  var name = "Outer";
+  function inner() {
+    console.log(name);
+  }
+  name = "Inner";
+  return inner; 
+}
+// let a = outer();
+// a();
+
+let a = {n: 1};
+let b = { ...a};
+
+b.n = 2;
+
+console.log(a.n);
