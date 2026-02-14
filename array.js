@@ -1,7 +1,22 @@
-let nums = [23, 56, 949, 78, 98, 789, 21];
-console.log(Math.max(...nums));
+let nums = [23, 56, 949, 78, 98, 4,789, 21];
+let maxNum = nums[0];
+for(let i=0; i<nums.length-1; i++){
+    if(maxNum < nums[i]){
+        maxNum =+ nums[i]
+    }
+}
+console.log(maxNum);
 
-console.log(Math.min(...nums));
+let minNum = nums[nums.length-1];
+for(let i=nums.length-1; i>0 ; i--){
+    if(minNum > nums[i]){
+        minNum =+ nums[i]
+    }
+}
+console.log(minNum)
+// console.log(Math.max(...nums));
+
+// console.log(Math.min(...nums));
 
 let numbers = [1,2,3,3,2,4]
 let res = [...new Set(numbers)]
